@@ -8,8 +8,8 @@ export interface IFormData{
     password: string,
     confirmPassword: string;
     email:string;
-    errorMessage:string;
-    pattern:string
+    // errorMessage:string;
+    // pattern:string
 }
 
 
@@ -20,8 +20,8 @@ const defaultFormData: IFormData = {
     password: "",
     confirmPassword: "",
     email: "",
-    errorMessage:"",
-    pattern:""
+    // errorMessage:"",
+    // pattern:""
   };
 
 interface ILoginContext{

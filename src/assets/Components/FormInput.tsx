@@ -6,20 +6,21 @@ type Props = {
   type: string;
   placeholder: string;
   label: string;
-  required: boolean;
-  autoComplete?: string;
-	onChange: React.ChangeEventHandler<HTMLInputElement> | React.FormEventHandler<HTMLFormElement>;
-  errorMessage?: string;
-  pattern?: string;
+//   required: boolean;
+//   autoComplete?: string;
+	// onChange: React.ChangeEventHandler<HTMLInputElement> | React.FormEventHandler<HTMLFormElement>;
+//   errorMessage?: string;
+//   pattern?: string;
 };
 
 const FormInput = (props: Props) => {
 	const [focused, setFocused] = useState<boolean>(false);
-	const { label, id, name, errorMessage, onChange, ...inputProps } = props;
+	const { label, id, name, ...inputProps } = props;
+	// const { label, id, name, errorMessage, onChange, ...inputProps } = props;
 
-	const handleFocus = () => {
-		setFocused(true);
-	};
+	// const handleFocus = () => {
+	// 	setFocused(true);
+	// };
 	return (
 		<div className="formInput">
 			<label htmlFor={name}>{label}</label>
@@ -27,12 +28,12 @@ const FormInput = (props: Props) => {
 				name={name}
 				id={name}
 				{...inputProps}
-				onBlur={handleFocus}
-				onChange={onChange}
-				onFocus={() =>name === "confirmPassword" && setFocused(true)}
-				focused={focused.toString() as string}
+				// onBlur={handleFocus}
+				// onChange={onChange}
+				// onFocus={() =>name === "confirmPassword" && setFocused(true)}
+				// focused={focused.toString() as string}
 			/>
-			<span>{errorMessage}</span>
+			{/* <span>{errorMessage}</span> */}
 		</div>
 	);
 };

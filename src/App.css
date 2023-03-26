@@ -26,12 +26,12 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: auto;
+  min-height: 100dvh;
   background: linear-gradient(
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0.3)
     ),
-    url(../src/assets/images/mountains.jpg);
+    url(../src/assets/images/nasa.jpg);
   background-size: cover;
   background-position: center;
   padding: 2em;
@@ -86,24 +86,9 @@ span{
   padding: 3px;
   color: red;
   text-align: left;
-  display: none;
 }
 
-input:invalid[focused="true"]{
-  border: 1px solid red;
-}
 
-input:invalid[focused="true"] ~ span{
-  display: block;
-}
-
-/* input:invalid{
-  border: 1px solid red;
-}
-
-input:invalid ~ span{
-  display: block;
-} */
 
 
 .homeSection{
@@ -111,12 +96,12 @@ input:invalid ~ span{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 100dvh;
+  height: 100vh;
   background: linear-gradient(
       rgba(255, 255, 255, 0),
       rgba(255, 255, 255, 0.3)
     ),
-    url(../src/assets/images/trees.jpg);
+    url(./assets/images/lookingupSpace.jpg);
   background-size: cover;
   background-position: center;
   padding: 2em;
